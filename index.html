@@ -72,5 +72,21 @@
       <p>HTML은 웹페이지의 구조를 만드는 언어입니다. 제목, 문단, 이미지, 링크 등을 구성할 수 있어요.</p>
     </article>
   </div>
+  <!-- 방문자 수 카운터 -->
+<div align="center" style="margin-top:30px;">
+  <img src="https://hitwebcounter.com/counter/counter.php?page=YOUR_PAGE_ID&style=0006&nbdigits=5&type=page&initCount=0" title="방문자 수" Alt="방문자 수" border="0">
+</div>
+
+<!-- 현재 시간 표시 -->
+<div id="clock" style="text-align:center; margin-top:20px; font-size:18px; color:#aaa;"></div>
+
+<script>
+function updateClock() {
+  var now = new Date();
+  document.getElementById('clock').innerHTML = now.toLocaleString();
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
 </body>
 </html>
